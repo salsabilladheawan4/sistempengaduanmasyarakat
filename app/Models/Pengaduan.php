@@ -27,4 +27,5 @@ class Pengaduan extends Model
         return $this->hasMany(Media::class, 'ref_id', 'pengaduan_id')
                     ->where('ref_table', 'pengaduan');
     }
+    
 }
